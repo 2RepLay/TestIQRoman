@@ -45,7 +45,7 @@ class MainFragment : Fragment() {
         userList.layoutManager = LinearLayoutManager(this.context!!, LinearLayoutManager.VERTICAL, false)
 
         addNewUserButton.setOnClickListener {
-            listOfUsers.add(UserModel(name = "New User: ${listOfUsers.size - 2}", score = 0, avatar = "https://assets.jpegmini.com/user/images/slider_puffin_jpegmini.jpg"))
+            listOfUsers.add(UserModel(name = "New User: ${listOfUsers.size - 2}", score = 0, avatar = "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1601&q=80"))
 
             userAdapter.notifyDataSetChanged()
         }
